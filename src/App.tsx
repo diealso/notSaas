@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import supabase from "./utils/db/db";
+import { Button } from "../src/components/ui/button";
 
 function App() {
   const [countries, setCountries] = useState<any>([]);
@@ -14,13 +15,16 @@ function App() {
   }
 
   return (
-    <ul>
-      {countries.map((country: any) => (
-        <li className="py-4" key={country.name}>
-          {country.name}
-        </li>
-      ))}
-    </ul>
+    <div>
+      <ul>
+        {countries.map((country: any) => (
+          <li className="py-4" key={country.name}>
+            {country.name}
+          </li>
+        ))}
+      </ul>
+      <Button>Click me</Button>
+    </div>
   );
 }
 
