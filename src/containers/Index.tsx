@@ -1,9 +1,12 @@
+import Breadcrumb from "../components/Breadcrumb";
+
 const Index = () => {
   return (
-    <div>
+    <>
+      <Breadcrumb main="Index" />
       <p>Index</p>
       {/* Poner contenido del index aqui */}
-    </div>
+    </>
   );
 };
 
