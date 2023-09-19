@@ -155,7 +155,7 @@ const Sidemenu = () => {
         className="justify-start w-full text-sm font-normal"
       >
         <Palmtree className="mr-2 w-[16px] h-[16px]" />
-        Leaves / Absence
+        Leaves / Absences
       </Button>
     </>
   );
