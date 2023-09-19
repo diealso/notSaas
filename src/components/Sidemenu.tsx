@@ -1,9 +1,7 @@
 import {
-  CheckCircle,
   Clock2,
   FileText,
   Home,
-  Hourglass,
   PackageSearch,
   Palmtree,
   Plus,
@@ -46,36 +44,21 @@ const Sidemenu = () => {
             <span className="text-sm font-normal">Products</span>
           </AccordionTrigger>
           <AccordionContent>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-accentColor font-medium" : "font-normal"
-              }
-              to="./products"
-              end
+            <Button
+              variant="ghostInherit"
+              className="justify-start w-full text-sm font-inherit"
             >
-              <Button
-                variant="ghostInherit"
-                className="justify-start w-full text-sm font-inherit"
-              >
-                <Search className="mr-2 w-[16px] h-[16px]" />
-                See products
-              </Button>
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-accentColor font-medium" : "font-normal"
-              }
-              to="./products/add"
-              end
+              <Search className="mr-2 w-[16px] h-[16px]" />
+              See products
+            </Button>
+
+            <Button
+              variant="ghostInherit"
+              className="justify-start w-full text-sm font-inherit"
             >
-              <Button
-                variant="ghostInherit"
-                className="justify-start w-full text-sm font-inherit"
-              >
-                <Plus className="mr-2 w-[16px] h-[16px]" />
-                Add a product
-              </Button>
-            </NavLink>
+              <Plus className="mr-2 w-[16px] h-[16px]" />
+              Add a product
+            </Button>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
@@ -86,36 +69,21 @@ const Sidemenu = () => {
             <span className="text-sm font-normal">Teams</span>
           </AccordionTrigger>
           <AccordionContent>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-accentColor font-medium" : "font-normal"
-              }
-              to="./teams"
-              end
+            <Button
+              variant="ghostInherit"
+              className="justify-start w-full text-sm font-inherit"
             >
-              <Button
-                variant="ghostInherit"
-                className="justify-start w-full text-sm font-inherit"
-              >
-                <Search className="mr-2 w-[16px] h-[16px]" />
-                See teams
-              </Button>
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-accentColor font-medium" : "font-normal"
-              }
-              to="./teams/add"
-              end
+              <Search className="mr-2 w-[16px] h-[16px]" />
+              See teams
+            </Button>
+
+            <Button
+              variant="ghostInherit"
+              className="justify-start w-full text-sm font-inherit"
             >
-              <Button
-                variant="ghostInherit"
-                className="justify-start w-full text-sm font-inherit"
-              >
-                <Plus className="mr-2 w-[16px] h-[16px]" />
-                Add a team
-              </Button>
-            </NavLink>
+              <Plus className="mr-2 w-[16px] h-[16px]" />
+              Add a team
+            </Button>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
@@ -126,36 +94,21 @@ const Sidemenu = () => {
             <span className="text-sm font-normal">People</span>
           </AccordionTrigger>
           <AccordionContent>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-accentColor font-medium" : "font-normal"
-              }
-              to="./people"
-              end
+            <Button
+              variant="ghostInherit"
+              className="justify-start w-full text-sm font-inherit"
             >
-              <Button
-                variant="ghostInherit"
-                className="justify-start w-full text-sm font-inherit"
-              >
-                <Search className="mr-2 w-[16px] h-[16px]" />
-                See people
-              </Button>
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-accentColor font-medium" : "font-normal"
-              }
-              to="./people/add"
-              end
+              <Search className="mr-2 w-[16px] h-[16px]" />
+              See people
+            </Button>
+
+            <Button
+              variant="ghostInherit"
+              className="justify-start w-full text-sm font-inherit"
             >
-              <Button
-                variant="ghostInherit"
-                className="justify-start w-full text-sm font-inherit"
-              >
-                <Plus className="mr-2 w-[16px] h-[16px]" />
-                Add a person
-              </Button>
-            </NavLink>
+              <Plus className="mr-2 w-[16px] h-[16px]" />
+              Add a person
+            </Button>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
@@ -166,63 +119,30 @@ const Sidemenu = () => {
             <span className="text-sm font-normal">Documents</span>
           </AccordionTrigger>
           <AccordionContent>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-accentColor font-medium" : "font-normal"
-              }
-              to="./documents"
-              end
-            >
-              <Button
-                variant="ghostInherit"
-                className="justify-start w-full text-sm font-inherit"
-              >
-                <Search className="mr-2 w-[16px] h-[16px]" />
-                See documents
-              </Button>
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-accentColor font-medium" : "font-normal"
-              }
-              to="./documents/add"
-              end
-            >
-              <Button
-                variant="ghostInherit"
-                className="justify-start w-full text-sm font-inherit"
-              >
-                <Plus className="mr-2 w-[16px] h-[16px]" />
-                Add a document
-              </Button>
-            </NavLink>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-      <Accordion type="single" collapsible className="px-4">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>
-            <Wrench className="w-[16px] h-[16px]" />
-            <span className="text-sm font-normal">Tools</span>
-          </AccordionTrigger>
-          <AccordionContent>
             <Button
               variant="ghostInherit"
               className="justify-start w-full text-sm font-inherit"
             >
-              <Hourglass className="mr-2 w-[16px] h-[16px]" />
-              <span className="text-sm font-normal text-left">TICO</span>
+              <Search className="mr-2 w-[16px] h-[16px]" />
+              See documents
             </Button>
             <Button
               variant="ghostInherit"
               className="justify-start w-full text-sm font-inherit"
             >
-              <CheckCircle className="mr-2 w-[16px] h-[16px]" />
-              <span className="text-sm font-normal text-left">TIFI</span>
+              <Plus className="mr-2 w-[16px] h-[16px]" />
+              Add a document
             </Button>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+      <Button
+        variant="ghostInherit"
+        className="justify-start w-full text-sm font-normal"
+      >
+        <Wrench className="mr-2 w-[16px] h-[16px]" />
+        Tools
+      </Button>
       <Button
         variant="ghostInherit"
         className="justify-start w-full text-sm font-normal"
