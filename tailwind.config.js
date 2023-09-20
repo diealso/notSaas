@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      lineHeight: {
+        thin: "0.75rem",
+      },
       colors: {
         main: "var(--mainColor)",
         secondary: "var(--secondaryColor)",

@@ -8,21 +8,10 @@ import {
   Route,
 } from "react-router-dom";
 
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
-
 import Error from "./components/Error";
 import Login from "./containers/Login";
 import Index from "./containers/Index";
 import Frame from "./containers/Frame";
-
-const queryClient = new QueryClient();
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -59,10 +48,7 @@ function App() {
     console.log(session);
     return (
       <>
-        <QueryClientProvider client={queryClient}>
-          <ReactQueryDevtools initialIsOpen={false} />
-          <RouterProvider router={router} />
-        </QueryClientProvider>
+        <RouterProvider router={router} />
       </>
     );
   }

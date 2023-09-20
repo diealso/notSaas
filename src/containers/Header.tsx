@@ -1,5 +1,5 @@
 import supabase from "../utils/db/db";
-import { Button } from "../components/ui/button";
+import avatar from "../assets/avatar.avif";
 
 import {
   DropdownMenu,
@@ -10,20 +10,43 @@ import {
   DropdownMenuTrigger,
 } from "../components/ui/dropdown-menu";
 
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../components/ui/sheet";
+
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
+import { Menu } from "lucide-react";
+import Sidemenu from "../components/Sidemenu";
 
 const Header = () => {
   return (
     <header className="w-full border-b">
       <div className="flex items-center justify-between px-4 py-2 mx-auto ">
         <div className="flex items-center justify-between gap-4">
-          <p>Header</p>
+          <Sheet>
+            <SheetTrigger>
+              <Menu className="inline-block cursor-pointer md:hidden" />
+            </SheetTrigger>
+            <SheetContent side={"left"}>
+              <SheetHeader>
+                <div className="pt-4">
+                  <Sidemenu />
+                </div>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
+          <p className="text-4xl font-bold">NOTSAAS</p>
         </div>
         <DropdownMenu>
           <DropdownMenuTrigger>
             <Avatar>
-              <AvatarImage src="https://avatars.githubusercontent.com/u/6640391?v=4" />
-              <AvatarFallback>CN</AvatarFallback>
+              <AvatarImage src={avatar} />
+              <AvatarFallback>DA</AvatarFallback>
             </Avatar>
           </DropdownMenuTrigger>
           <DropdownMenuContent>

@@ -31,7 +31,7 @@ const Sidemenu = () => {
       >
         <Button
           variant="ghostInherit"
-          className="justify-start w-full text-sm font-inherit"
+          className="justify-start w-full text-sm text-left leading-thin font-inherit"
         >
           <Home className="mr-2 w-[16px] h-[16px]" />
           Index
@@ -41,12 +41,14 @@ const Sidemenu = () => {
         <AccordionItem value="item-1">
           <AccordionTrigger>
             <PackageSearch className="w-[16px] h-[16px]" />
-            <span className="text-sm font-normal">Products</span>
+            <span className="text-sm font-normal text-left leading-thin">
+              Products
+            </span>
           </AccordionTrigger>
           <AccordionContent>
             <Button
               variant="ghostInherit"
-              className="justify-start w-full text-sm font-inherit"
+              className="justify-start w-full text-sm text-left leading-thin font-inherit"
             >
               <Search className="mr-2 w-[16px] h-[16px]" />
               See products
@@ -54,7 +56,7 @@ const Sidemenu = () => {
 
             <Button
               variant="ghostInherit"
-              className="justify-start w-full text-sm font-inherit"
+              className="justify-start w-full text-sm text-left leading-thin font-inherit"
             >
               <Plus className="mr-2 w-[16px] h-[16px]" />
               Add a product
@@ -66,12 +68,14 @@ const Sidemenu = () => {
         <AccordionItem value="item-1">
           <AccordionTrigger>
             <Users className="w-[16px] h-[16px]" />
-            <span className="text-sm font-normal">Teams</span>
+            <span className="text-sm font-normal text-left leading-thin">
+              Teams
+            </span>
           </AccordionTrigger>
           <AccordionContent>
             <Button
               variant="ghostInherit"
-              className="justify-start w-full text-sm font-inherit"
+              className="justify-start w-full text-sm text-left leading-thin font-inherit"
             >
               <Search className="mr-2 w-[16px] h-[16px]" />
               See teams
@@ -79,7 +83,7 @@ const Sidemenu = () => {
 
             <Button
               variant="ghostInherit"
-              className="justify-start w-full text-sm font-inherit"
+              className="justify-start w-full text-sm text-left leading-thin font-inherit"
             >
               <Plus className="mr-2 w-[16px] h-[16px]" />
               Add a team
@@ -91,12 +95,14 @@ const Sidemenu = () => {
         <AccordionItem value="item-1">
           <AccordionTrigger>
             <User className="w-[16px] h-[16px]" />
-            <span className="text-sm font-normal">People</span>
+            <span className="text-sm font-normal text-left leading-thin">
+              People
+            </span>
           </AccordionTrigger>
           <AccordionContent>
             <Button
               variant="ghostInherit"
-              className="justify-start w-full text-sm font-inherit"
+              className="justify-start w-full text-sm text-left leading-thin font-inherit"
             >
               <Search className="mr-2 w-[16px] h-[16px]" />
               See people
@@ -104,7 +110,7 @@ const Sidemenu = () => {
 
             <Button
               variant="ghostInherit"
-              className="justify-start w-full text-sm font-inherit"
+              className="justify-start w-full text-sm text-left leading-thin font-inherit"
             >
               <Plus className="mr-2 w-[16px] h-[16px]" />
               Add a person
@@ -116,19 +122,21 @@ const Sidemenu = () => {
         <AccordionItem value="item-1">
           <AccordionTrigger>
             <FileText className="w-[16px] h-[16px]" />
-            <span className="text-sm font-normal">Documents</span>
+            <span className="text-sm font-normal text-left leading-thin">
+              Documents
+            </span>
           </AccordionTrigger>
           <AccordionContent>
             <Button
               variant="ghostInherit"
-              className="justify-start w-full text-sm font-inherit"
+              className="justify-start w-full text-sm text-left leading-thin font-inherit"
             >
               <Search className="mr-2 w-[16px] h-[16px]" />
               See documents
             </Button>
             <Button
               variant="ghostInherit"
-              className="justify-start w-full text-sm font-inherit"
+              className="justify-start w-full text-sm text-left leading-thin font-inherit"
             >
               <Plus className="mr-2 w-[16px] h-[16px]" />
               Add a document
@@ -138,21 +146,21 @@ const Sidemenu = () => {
       </Accordion>
       <Button
         variant="ghostInherit"
-        className="justify-start w-full text-sm font-normal"
+        className="justify-start w-full text-sm font-normal text-left leading-thin"
       >
         <Wrench className="mr-2 w-[16px] h-[16px]" />
         Tools
       </Button>
       <Button
         variant="ghostInherit"
-        className="justify-start w-full text-sm font-normal"
+        className="justify-start w-full text-sm font-normal text-left leading-thin"
       >
         <Clock2 className="mr-2 w-[16px] h-[16px]" />
         My work time
       </Button>
       <Button
         variant="ghostInherit"
-        className="justify-start w-full text-sm font-normal"
+        className="justify-start w-full text-sm font-normal text-left leading-thin"
       >
         <Palmtree className="mr-2 w-[16px] h-[16px]" />
         Leaves / Absences

@@ -6,6 +6,8 @@ import {
   CardTitle,
 } from "../components/ui/card";
 
+import avatar from "../assets/avatar.avif";
+
 import {
   Tooltip,
   ResponsiveContainer,
@@ -168,8 +170,8 @@ const Index = () => {
           </CardContent>
         </Card>
       </div>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-        <Card className="col-span-4">
+      <div className="grid grid-cols-7 gap-4 mb-4">
+        <Card className="block w-full col-span-7 lg:col-span-4">
           <CardHeader>
             <CardTitle>Overview</CardTitle>
           </CardHeader>
@@ -198,102 +200,106 @@ const Index = () => {
             </ResponsiveContainer>
           </CardContent>
         </Card>
-        <Card className="col-span-3">
+        <Card className="block w-full col-span-7 lg:col-span-3">
           <CardHeader>
             <CardTitle>New people on the team</CardTitle>
-            <CardDescription>You made 265 sales this month.</CardDescription>
+            <CardDescription>
+              People that joined in the past month!
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-8">
               <div className="flex items-center">
                 <Avatar className="h-9 w-9">
-                  <AvatarImage src="/avatars/01.png" alt="Avatar" />
-                  <AvatarFallback>OM</AvatarFallback>
+                  <AvatarImage src={avatar} />
+                  <AvatarFallback>DA</AvatarFallback>
                 </Avatar>
                 <div className="ml-4 space-y-1">
                   <p className="text-sm font-medium leading-none">
-                    Olivia Martin
+                    Diego Alvarez
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    olivia.martin@email.com
+                    diego.alvarez@email.com
                   </p>
                 </div>
-                <div className="ml-auto font-medium">
+                <div className="ml-auto font-medium max-[400px]:hidden">
                   <Button>Say hi!</Button>
                 </div>
               </div>
               <div className="flex items-center">
                 <Avatar className="h-9 w-9">
-                  <AvatarImage src="/avatars/01.png" alt="Avatar" />
-                  <AvatarFallback>OM</AvatarFallback>
+                  <AvatarImage src={avatar} />
+                  <AvatarFallback>DA</AvatarFallback>
                 </Avatar>
                 <div className="ml-4 space-y-1">
                   <p className="text-sm font-medium leading-none">
-                    Olivia Martin
+                    Diego Alvarez
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    olivia.martin@email.com
+                    diego.alvarez@email.com
                   </p>
                 </div>
-                <div className="ml-auto font-medium">
+                <div className="ml-auto font-medium max-[400px]:hidden">
                   <Button>Say hi!</Button>
                 </div>
               </div>
               <div className="flex items-center">
                 <Avatar className="h-9 w-9">
-                  <AvatarImage src="/avatars/01.png" alt="Avatar" />
-                  <AvatarFallback>OM</AvatarFallback>
+                  <AvatarImage src={avatar} />
+                  <AvatarFallback>DA</AvatarFallback>
                 </Avatar>
                 <div className="ml-4 space-y-1">
                   <p className="text-sm font-medium leading-none">
-                    Olivia Martin
+                    Diego Alvarez
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    olivia.martin@email.com
+                    diego.alvarez@email.com
                   </p>
                 </div>
-                <div className="ml-auto font-medium">
+                <div className="ml-auto font-medium max-[400px]:hidden">
                   <Button>Say hi!</Button>
                 </div>
               </div>
               <div className="flex items-center">
                 <Avatar className="h-9 w-9">
-                  <AvatarImage src="/avatars/01.png" alt="Avatar" />
-                  <AvatarFallback>OM</AvatarFallback>
+                  <AvatarImage src={avatar} />
+                  <AvatarFallback>DA</AvatarFallback>
                 </Avatar>
                 <div className="ml-4 space-y-1">
                   <p className="text-sm font-medium leading-none">
-                    Olivia Martin
+                    Diego Alvarez
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    olivia.martin@email.com
+                    diego.alvarez@email.com
                   </p>
                 </div>
-                <div className="ml-auto font-medium">
+                <div className="ml-auto font-medium max-[400px]:hidden">
                   <Button>Say hi!</Button>
                 </div>
               </div>
               <div className="flex items-center">
                 <Avatar className="h-9 w-9">
-                  <AvatarImage src="/avatars/01.png" alt="Avatar" />
-                  <AvatarFallback>OM</AvatarFallback>
+                  <AvatarImage src={avatar} />
+                  <AvatarFallback>DA</AvatarFallback>
                 </Avatar>
                 <div className="ml-4 space-y-1">
                   <p className="text-sm font-medium leading-none">
-                    Olivia Martin
+                    Diego Alvarez
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    olivia.martin@email.com
+                    diego.alvarez@email.com
                   </p>
                 </div>
-                <div className="ml-auto font-medium">
+                <div className="ml-auto font-medium max-[400px]:hidden">
                   <Button>Say hi!</Button>
                 </div>
               </div>
             </div>
           </CardContent>
         </Card>
-        <Card className="col-span-7">
+      </div>
+      <div className="grid grid-cols-1 gap-4 mb-4">
+        <Card className="block w-full col-span-1">
           <CardHeader className="flex flex-row items-center justify-between pb-2 align-middle">
             <CardTitle>Things to do</CardTitle>
             <CheckSquare className="w-4 h-4 text-muted-foreground" />

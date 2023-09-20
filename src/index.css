@@ -78,3 +78,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+.recharts-wrapper {
+  max-width: 100% !important;
+  width: 100% !important;
+}
