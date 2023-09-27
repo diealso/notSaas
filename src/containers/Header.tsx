@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className="w-full border-b">
       <div className="flex items-center justify-between px-4 py-2 mx-auto ">
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center justify-between gap-2 md:gap-0">
           <Sheet>
             <SheetTrigger>
               <Menu className="inline-block cursor-pointer md:hidden" />
