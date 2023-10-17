@@ -10,7 +10,10 @@ const Login = () => {
         <h1 className="mb-12 text-5xl font-black text-center text-main">
           NOTSAAS
         </h1>
-        <p className="text-center">
+        <p className="mb-2 text-2xl text-center">
+          <b>The providers below are not enabled.</b>
+        </p>
+        <p className="mb-4 text-center">
           You can use <b>diealso93@gmail.com</b>/<b>thisisatest</b> as
           username/password
         </p>
