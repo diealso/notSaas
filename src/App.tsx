@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import supabase from "./utils/db/db";
+// import { useEffect, useState } from "react";
+// import supabase from "./utils/db/db";
 
 import {
   createBrowserRouter,
@@ -26,32 +26,38 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  const [session, setSession] = useState<any>(null);
+  // const [session, setSession] = useState<any>(null);
 
-  useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session);
-    });
+  // useEffect(() => {
+  //   supabase.auth.getSession().then(({ data: { session } }) => {
+  //     setSession(session);
+  //   });
 
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session);
-    });
+  //   const {
+  //     data: { subscription },
+  //   } = supabase.auth.onAuthStateChange((_event, session) => {
+  //     setSession(session);
+  //   });
 
-    return () => subscription.unsubscribe();
-  }, []);
+  //   return () => subscription.unsubscribe();
+  // }, []);
 
-  if (!session) {
-    return <Login />;
-  } else {
-    console.log(session);
-    return (
-      <>
-        <RouterProvider router={router} />
-      </>
-    );
-  }
+  // if (!session) {
+  //   return <Login />;
+  // } else {
+  //   return (
+  //     <>
+  //       <RouterProvider router={router} />
+  //     </>
+  //   );
+  // }
+
+  return (
+    <>
+      <Login />
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;

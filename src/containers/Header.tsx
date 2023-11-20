@@ -23,7 +23,7 @@ import Sidemenu from "../components/Sidemenu";
 
 const Header = () => {
   return (
-    <header className="w-full border-b">
+    <header className="w-full border-t border-b">
       <div className="flex items-center justify-between px-4 py-2 mx-auto ">
         <div className="flex items-center justify-between gap-2 md:gap-0">
           <Sheet>
